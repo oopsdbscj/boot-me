@@ -19,9 +19,16 @@ public class DemoApplication {
         this.userMapper = userMapper;
     }
 
+    public static class Print{
+        void out(Object args){
+            System.out.println("============hah===================");
+        }
+    }
+
     @Bean
     CommandLineRunner sampleCommandLineRunner() {
-        return (args) -> System.out.println(this.userMapper.findOne(2));
+        Print p = new DemoApplication.Print();
+        return p::out;
     }
 
 
