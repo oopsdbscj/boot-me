@@ -1,4 +1,4 @@
-package hello.web.controller;
+package hello.web.controller.crawl.controller;
 
 import com.zaxxer.hikari.HikariConfig;
 import edu.uci.ics.crawler4j.crawler.CrawlConfig;
