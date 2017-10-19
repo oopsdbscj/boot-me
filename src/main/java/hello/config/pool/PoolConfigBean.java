@@ -1,17 +1,19 @@
-package hello.pool.config;
+package hello.config.pool;
 
-import com.zaxxer.hikari.HikariDataSource;
+import com.zaxxer.hikari.HikariConfig;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.sql.DataSource;
-
+/**
+ * @author tab chan 10/19/2017
+ */
 @Configuration
 public class PoolConfigBean {
     @Bean
     @ConfigurationProperties(prefix = "app.datasource")
-    public DataSource getDataSource() {
-        return new HikariDataSource();
+    public HikariConfig getDatasourceConfig(){
+        return new HikariConfig();
     }
+
 }
