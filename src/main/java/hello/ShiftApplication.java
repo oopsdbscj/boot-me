@@ -1,21 +1,20 @@
 package hello;
 
 import hello.mapper.UserMapper;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class DemoApplication {
+public class ShiftApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
+        SpringApplication.run(ShiftApplication.class, args);
     }
     private final UserMapper userMapper;
 
-    public DemoApplication(UserMapper userMapper) {
+    public ShiftApplication(UserMapper userMapper) {
         this.userMapper = userMapper;
     }
 
@@ -27,7 +26,7 @@ public class DemoApplication {
 
     @Bean
     CommandLineRunner sampleCommandLineRunner() {
-        Print p = new DemoApplication.Print();
+        Print p = new ShiftApplication.Print();
         return p::out;
     }
 
