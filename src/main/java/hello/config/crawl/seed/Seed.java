@@ -7,6 +7,14 @@ public class Seed {
     private String name;
     private String url;
 
+    public Seed() {
+    }
+
+    public Seed(String name, String url) {
+        this.name = name;
+        this.url = url;
+    }
+
     public String getUrl() {
         return url;
     }

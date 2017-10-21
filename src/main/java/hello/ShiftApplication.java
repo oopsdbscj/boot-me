@@ -1,5 +1,6 @@
 package hello;
 
+import hello.config.crawl.PicDownloadTask;
 import hello.mapper.UserMapper;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -27,6 +28,8 @@ public class ShiftApplication {
     @Bean
     CommandLineRunner sampleCommandLineRunner() {
         Print p = new ShiftApplication.Print();
+        Thread run = new Thread(new PicDownloadTask());
+        run.start();
         return p::out;
     }
 
