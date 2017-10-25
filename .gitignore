@@ -25,4 +25,5 @@ hs_err_pid*
 .idea/
 gs-spring-boot.iml
 *.iml
-target/*
+target/classes
+target/generated-sources
