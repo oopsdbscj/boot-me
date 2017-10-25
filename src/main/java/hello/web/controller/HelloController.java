@@ -1,4 +1,4 @@
-package hello.web;
+package hello.web.controller;
 
 import hello.config.crawl.CrawlConfigEnhance;
 import hello.service.UserService;

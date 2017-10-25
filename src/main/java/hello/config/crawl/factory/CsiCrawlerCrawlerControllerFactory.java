@@ -3,7 +3,7 @@ package hello.config.crawl.factory;
 import edu.uci.ics.crawler4j.crawler.CrawlController;
 import edu.uci.ics.crawler4j.crawler.WebCrawler;
 import hello.config.crawl.CrawlConfigEnhance;
-import hello.web.crawl.controller.crawl.cawler.No1Crawler;
+import hello.service.impl.No1Crawler;
 
 /**
  * @author tab chan 10/20/2017
