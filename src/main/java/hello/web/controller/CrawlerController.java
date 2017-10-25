@@ -1,4 +1,4 @@
-package hello.web.crawl.controller;
+package hello.web.controller;
 
 import edu.uci.ics.crawler4j.crawler.CrawlController;
 import edu.uci.ics.crawler4j.fetcher.PageFetcher;

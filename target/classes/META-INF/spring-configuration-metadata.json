@@ -8,19 +8,39 @@
     },
     {
       "name": "crawl.config",
-      "type": "hello.config.crawl.CrawlConfigEnhance",
-      "sourceType": "hello.config.crawl.CrawlConfigEnhance"
-    },
-    {
-      "name": "crawl.config",
       "type": "hello.config.crawl.CrawlConfigBean",
       "sourceType": "hello.config.crawl.PasteConfigBean",
       "sourceMethod": "getCrawlConfigBean()"
+    },
+    {
+      "name": "crawl.config",
+      "type": "hello.config.crawl.CrawlConfigEnhance",
+      "sourceType": "hello.config.crawl.CrawlConfigEnhance"
     }
   ],
   "properties": [
     {
       "name": "app.datasource.allow-pool-suspension",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.allow-pool-suspension",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.allow-pool-suspension",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.auto-commit",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.auto-commit",
       "type": "java.lang.Boolean",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
@@ -35,7 +55,37 @@
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
+      "name": "app.datasource.catalog",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.catalog",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
       "name": "app.datasource.connection-init-sql",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.connection-init-sql",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.connection-init-sql",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.connection-test-query",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.connection-test-query",
       "type": "java.lang.String",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
@@ -50,7 +100,37 @@
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
+      "name": "app.datasource.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.connection-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
       "name": "app.datasource.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.data-source-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.data-source-j-n-d-i",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.data-source-j-n-d-i",
       "type": "java.lang.String",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
@@ -65,6 +145,26 @@
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
+      "name": "app.datasource.data-source-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.data-source-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
       "name": "app.datasource.driver-class-name",
       "type": "java.lang.String",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
@@ -75,8 +175,38 @@
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
+      "name": "app.datasource.health-check-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.health-check-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
       "name": "app.datasource.health-check-registry",
       "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.health-check-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.health-check-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.idle-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.idle-timeout",
+      "type": "java.lang.Long",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
@@ -92,6 +222,30 @@
       "deprecation": {}
     },
     {
+      "name": "app.datasource.initialization-fail-fast",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig",
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "app.datasource.initialization-fail-fast",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig",
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "app.datasource.initialization-fail-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.initialization-fail-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
       "name": "app.datasource.initialization-fail-timeout",
       "type": "java.lang.Long",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
@@ -99,6 +253,26 @@
     {
       "name": "app.datasource.isolate-internal-queries",
       "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.isolate-internal-queries",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.isolate-internal-queries",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.jdbc-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.jdbc-url",
+      "type": "java.lang.String",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
@@ -114,7 +288,41 @@
       "deprecation": {}
     },
     {
+      "name": "app.datasource.jdbc4-connection-test",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig",
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "app.datasource.jdbc4-connection-test",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig",
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
       "name": "app.datasource.leak-detection-threshold",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.leak-detection-threshold",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.leak-detection-threshold",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.max-lifetime",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.max-lifetime",
       "type": "java.lang.Long",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
@@ -129,8 +337,38 @@
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
+      "name": "app.datasource.maximum-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.maximum-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
       "name": "app.datasource.metric-registry",
       "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.metric-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.metric-registry",
+      "type": "java.lang.Object",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.metrics-tracker-factory",
+      "type": "com.zaxxer.hikari.metrics.MetricsTrackerFactory",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.metrics-tracker-factory",
+      "type": "com.zaxxer.hikari.metrics.MetricsTrackerFactory",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
@@ -144,7 +382,37 @@
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
+      "name": "app.datasource.minimum-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.minimum-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
       "name": "app.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.password",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.pool-name",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.pool-name",
       "type": "java.lang.String",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
@@ -159,8 +427,38 @@
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
+      "name": "app.datasource.read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.read-only",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
       "name": "app.datasource.register-mbeans",
       "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.register-mbeans",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.register-mbeans",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.scheduled-executor",
+      "type": "java.util.concurrent.ScheduledExecutorService",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.scheduled-executor",
+      "type": "java.util.concurrent.ScheduledExecutorService",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
@@ -176,7 +474,41 @@
       "deprecation": {}
     },
     {
+      "name": "app.datasource.scheduled-executor-service",
+      "type": "java.util.concurrent.ScheduledThreadPoolExecutor",
+      "sourceType": "com.zaxxer.hikari.HikariConfig",
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
+      "name": "app.datasource.scheduled-executor-service",
+      "type": "java.util.concurrent.ScheduledThreadPoolExecutor",
+      "sourceType": "com.zaxxer.hikari.HikariConfig",
+      "deprecated": true,
+      "deprecation": {}
+    },
+    {
       "name": "app.datasource.schema",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.schema",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.schema",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.transaction-isolation",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.transaction-isolation",
       "type": "java.lang.String",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
@@ -188,6 +520,26 @@
     {
       "name": "app.datasource.username",
       "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.username",
+      "type": "java.lang.String",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.validation-timeout",
+      "type": "java.lang.Long",
+      "sourceType": "com.zaxxer.hikari.HikariConfig"
+    },
+    {
+      "name": "app.datasource.validation-timeout",
+      "type": "java.lang.Long",
       "sourceType": "com.zaxxer.hikari.HikariConfig"
     },
     {
@@ -213,17 +565,12 @@
     {
       "name": "crawl.config.crawl-storage-folder",
       "type": "java.lang.String",
+      "sourceType": "hello.config.crawl.CrawlConfigBean"
+    },
+    {
+      "name": "crawl.config.crawl-storage-folder",
+      "type": "java.lang.String",
       "sourceType": "hello.config.crawl.CrawlConfigEnhance"
-    },
-    {
-      "name": "crawl.config.crawl-storage-folder",
-      "type": "java.lang.String",
-      "sourceType": "hello.config.crawl.CrawlConfigBean"
-    },
-    {
-      "name": "crawl.config.crawl-storage-folder",
-      "type": "java.lang.String",
-      "sourceType": "hello.config.crawl.CrawlConfigBean"
     },
     {
       "name": "crawl.config.default-headers",
@@ -253,18 +600,13 @@
     {
       "name": "crawl.config.max-depth-of-crawling",
       "type": "java.lang.Integer",
-      "sourceType": "hello.config.crawl.CrawlConfigEnhance"
-    },
-    {
-      "name": "crawl.config.max-depth-of-crawling",
-      "type": "java.lang.Integer",
-      "sourceType": "hello.config.crawl.CrawlConfigBean"
-    },
-    {
-      "name": "crawl.config.max-depth-of-crawling",
-      "type": "java.lang.Integer",
       "sourceType": "hello.config.crawl.CrawlConfigBean",
       "defaultValue": -1
+    },
+    {
+      "name": "crawl.config.max-depth-of-crawling",
+      "type": "java.lang.Integer",
+      "sourceType": "hello.config.crawl.CrawlConfigEnhance"
     },
     {
       "name": "crawl.config.max-download-size",
@@ -279,18 +621,13 @@
     {
       "name": "crawl.config.max-pages-to-fetch",
       "type": "java.lang.Integer",
-      "sourceType": "hello.config.crawl.CrawlConfigEnhance"
-    },
-    {
-      "name": "crawl.config.max-pages-to-fetch",
-      "type": "java.lang.Integer",
-      "sourceType": "hello.config.crawl.CrawlConfigBean"
-    },
-    {
-      "name": "crawl.config.max-pages-to-fetch",
-      "type": "java.lang.Integer",
       "sourceType": "hello.config.crawl.CrawlConfigBean",
       "defaultValue": -1
+    },
+    {
+      "name": "crawl.config.max-pages-to-fetch",
+      "type": "java.lang.Integer",
+      "sourceType": "hello.config.crawl.CrawlConfigEnhance"
     },
     {
       "name": "crawl.config.max-total-connections",
@@ -356,17 +693,12 @@
     {
       "name": "crawl.config.starts-with",
       "type": "java.lang.String",
+      "sourceType": "hello.config.crawl.CrawlConfigBean"
+    },
+    {
+      "name": "crawl.config.starts-with",
+      "type": "java.lang.String",
       "sourceType": "hello.config.crawl.CrawlConfigEnhance"
-    },
-    {
-      "name": "crawl.config.starts-with",
-      "type": "java.lang.String",
-      "sourceType": "hello.config.crawl.CrawlConfigBean"
-    },
-    {
-      "name": "crawl.config.starts-with",
-      "type": "java.lang.String",
-      "sourceType": "hello.config.crawl.CrawlConfigBean"
     },
     {
       "name": "crawl.config.thread-monitoring-delay-seconds",

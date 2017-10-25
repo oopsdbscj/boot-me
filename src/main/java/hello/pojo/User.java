@@ -16,18 +16,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * 创建日期：2014-07-16 10:27:05
- * 开发者：叶明(MSN:guming123416@hotmail.com,QQ:47043760)
- * 修改者：
- * 修改时间：
- * 程序作用：
- * 1、
- * 2、
- * 修改说明：
- * 1、
- * 2、
- * 版本：@version 2.0
- * @author 叶明
+ *
  */
 @SuppressWarnings("serial")
 public class User implements Serializable {

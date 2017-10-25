@@ -21,15 +21,15 @@ public class ShiftApplication {
 
     public static class Print{
         void out(Object args){
-            System.out.println("============hah===================");
+            System.out.println("============command line runner===================");
         }
     }
 
     @Bean
     CommandLineRunner sampleCommandLineRunner() {
         Print p = new ShiftApplication.Print();
-        Thread run = new Thread(new PicDownloadTask());
-        run.start();
+//        Thread run = new Thread(new PicDownloadTask());
+//        run.start();
         return p::out;
     }
 
