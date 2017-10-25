@@ -27,3 +27,5 @@ gs-spring-boot.iml
 *.iml
 */target/classes/*
 */target/generated-sources/*
+target/classes/hello/
+target/generated-sources/
