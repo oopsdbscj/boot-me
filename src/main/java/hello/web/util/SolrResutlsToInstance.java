@@ -1,6 +1,10 @@
 package hello.web.util;
 
+import hello.pojo.News;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.collections4.MapUtils;
+import org.apache.commons.lang3.time.DateFormatUtils;
+import org.apache.commons.lang3.time.DateUtils;
 import org.apache.poi.ss.formula.functions.T;
 import org.apache.solr.common.SolrDocument;
 import org.apache.solr.common.StringUtils;
@@ -40,18 +44,22 @@ public class SolrResutlsToInstance {
             if (value != null) {
                 field.setAccessible(true);
                 try {
-                    LOGGER.info("字段值:"+value+",类型："+value.getClass()+","+(value instanceof Long));
+                    LOGGER.info("字段名："+field.getName()+",字段值:"+value+",类型："+value.getClass()+","+(value instanceof Long));
                     if (value instanceof Long) {
-                        LOGGER.info("---");
+//                        LOGGER.info("---");
                         field.set(target, Integer.parseInt(value.toString()));
                     }else if (field.getName().contains("time")) {
-                        LOGGER.info("---");
-                        field.set(target, formatDateWithTimeZone((getTzone(null)),value.toString()));
+//                        LOGGER.info("---");
+                        try {
+                            field.set(target, DateUtils.parseDate(value.toString(), DateFormatUtils.ISO_DATETIME_FORMAT.getPattern()));
+                        } catch (ParseException e) {
+                            LOGGER.error("时间转换发生错误：", e);
+                        }
                     }else if("keylist".equals(field.getName())){
-                        LOGGER.info("+++");
+//                        LOGGER.info("+++");
                         field.set(target,value.toString());
                     }else {
-                        LOGGER.info("===");
+//                        LOGGER.info("===");
                         field.set(target, value);
                     }
                 } catch (IllegalAccessException e) {
@@ -105,5 +113,27 @@ public class SolrResutlsToInstance {
             LOGGER.error("解析时间错误，带时区的",e);
         }
         return parsed;
+    }
+
+    /**
+     *
+     * @param newss
+     * @param highlighting
+     */
+    public static void setHighlighting(List<News> newss, Map<String, Map<String, List<String>>> highlighting) {
+        LOGGER.info(highlighting.toString());
+        for (News news : newss) {
+            setHighlightingField(highlighting, news,"title");
+            setHighlightingField(highlighting, news,"summary");
+        }
+    }
+
+    private static void setHighlightingField(Map<String, Map<String, List<String>>> highlighting, News news,String highlightField) {
+        if(MapUtils.isNotEmpty(highlighting.get(news.getId()))){
+            if(CollectionUtils.isNotEmpty(highlighting.get(news.getId()).get(highlightField))){
+                LOGGER.info("高亮后的值："+highlighting.get(news.getId()).get(highlightField).get(0));
+                news.setTitle(highlighting.get(news.getId()).get(highlightField).get(0));
+            }
+        }
     }
 }

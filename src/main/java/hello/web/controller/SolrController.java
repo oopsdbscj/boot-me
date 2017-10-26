@@ -3,6 +3,7 @@ package hello.web.controller;
 import hello.pojo.News;
 import hello.web.util.RequestUtil;
 import hello.web.util.SolrResutlsToInstance;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.solr.client.solrj.SolrClient;
 import org.apache.solr.client.solrj.SolrQuery;
 import org.apache.solr.client.solrj.SolrServerException;
@@ -69,6 +70,11 @@ public class SolrController {
         SolrQuery query = new SolrQuery(querySynstax);
         query.setStart(start);
         query.setSort(SolrQuery.SortClause.desc("id"));
+        query.setHighlight(true).addHighlightField("title").addHighlightField("summary").setHighlightSimplePre("<span style=\"color:red\">");
+        query.setHighlightSimplePost("</span>");
+        query.setHighlightSnippets(2);//结果分片数，默认为1
+        query.setHighlightFragsize(200);//每个分片的最大长度，默认为100
+
 //        query.set
         QueryResponse queryResponse = null;
         try {
@@ -79,14 +85,14 @@ public class SolrController {
             e.printStackTrace();
         }
         SolrDocumentList results = queryResponse.getResults();
-        List<News> news = new ArrayList<>();
         Class cls = News.class;
-        news = (List<News>) SolrResutlsToInstance.instanceFromSolrDocuments(results, cls);
+        List<News> news = (List<News>) SolrResutlsToInstance.instanceFromSolrDocuments(results, cls);
+        SolrResutlsToInstance.setHighlighting(news,queryResponse.getHighlighting());
         List<Object> final_res = new ArrayList<>();
         final_res.add(results.getNumFound());
-        final_res.addAll(news);
+        if (CollectionUtils.isNotEmpty(news)) {
+            final_res.addAll(news);
+        }
         return final_res;
-
-
     }
 }
