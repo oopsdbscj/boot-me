@@ -13,6 +13,16 @@
     <select id="getNews" resultType="News">
         select * from t_news WHERE id = #{id}
     </select>
+    <select id="firstClass" resultType="News">
+        select * from t_news order by id DESC limit 0,10;
+    </select>
+    <select id="getMap" resultMap="idMap">
+        select n.id as idd,n.* from t_news n WHERE id =200
+    </select>
+    <resultMap type="hashmap" id="idMap">
+        <id column="id" property="id"/>
+        <association property="name" javaType="News" columnPrefix="n."/>
+    </resultMap>
     <!--<insert id="insert">
         insert into users (id, name, funkyNumber, roundingMode) values (
         #{id}, #{name}, #{funkyNumber}, #{roundingMode}

@@ -23,4 +23,14 @@ public class NewsController {
         LOGGER.info(newsServcie.getNews(id)+"");
         return newsServcie.getNews(id);
     }
+    @RequestMapping("/get/news/first-class")
+    public Object getFirstClass(){
+//        LOGGER.info(newsServcie.getNews(id)+"");
+        return newsServcie.getFirstClass();
+    }
+    @RequestMapping("/get/news/map/{id}")
+    public Object getFirstClass(@PathVariable("id")int id){
+//        LOGGER.info(newsServcie.getNews(id)+"");
+        return newsServcie.getMap(id);
+    }
 }
