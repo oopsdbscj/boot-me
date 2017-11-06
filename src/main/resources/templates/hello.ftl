@@ -5,22 +5,26 @@
     <title>hello</title>
     <style>
         html,body{
-            background-color: azure;
+            height: 100%;
         }
         #container{
+            position: absolute;
+            top:0;
+            left:10px;
+            right:10px;
+            bottom: 0;
             width: 80%;
-            height:1124px;
             margin:auto;
-
+            /*height: 100%;*/
         }
         #header{
-            height:90px;
+            height:100px;
             background-color: lightseagreen;
             margin:0;
             padding: 0;
         }
         #header span{
-            line-height:90px;
+            line-height:100px;
             display: block;
             text-align: center;
             padding: 100px auto;
@@ -29,7 +33,7 @@
         #menu{
             margin:0;
             padding: 0;
-            height: 50px;
+            height: 80px;
             background-color: darkgreen;
         }
         #menu li{
@@ -38,7 +42,7 @@
             font-size: 2em;
             display: block;
             width: 24%;
-            line-height: 50px;
+            line-height: 80px;
             font-family: "AR PL UKai CN";
         }
         #menu ul{
@@ -59,7 +63,7 @@
             background-color: black;
         }
         #footer{
-            height: 40px;
+            height: 60px;
             background-color: grey;
             clear: both;
         }
@@ -68,11 +72,11 @@
 <body>
 <div id="container">
     <div id="header">
-            <span>i am header</span>
+            <span>I am ${name1}</span>
     </div>
     <div id="menu">
         <ul>
-            <li>Home</li>
+            <li>Home11</li>
             <li>Contact</li>
             <li>About</li>
             <li>Join us</li>
