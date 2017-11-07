@@ -26,6 +26,7 @@ public class NewsController {
     @RequestMapping("/get/news/first-class")
     public Object getFirstClass(){
 //        LOGGER.info(newsServcie.getNews(id)+"");
+        LOGGER.info(newsServcie.getFirstClass().getClass().getName());
         return newsServcie.getFirstClass();
     }
     @RequestMapping("/get/news/map/{id}")
