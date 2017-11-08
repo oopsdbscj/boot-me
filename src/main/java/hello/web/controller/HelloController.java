@@ -28,7 +28,7 @@ public class HelloController {
 
     @GetMapping("/hellopage")
     public String hello(HttpServletRequest request, HttpServletResponse response) {
-        request.setAttribute("name1","tab from 巴中");
+        request.setAttribute("name1","from");
         return "hello";
     }
 }
