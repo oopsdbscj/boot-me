@@ -62,10 +62,10 @@ public class No1Crawler extends WebCrawler {
                 for (WebURL link : links) {
                     String curUrl = link.getURL();
                     LOGGER.info("handling:" + curUrl);
-//                    if (curUrl.endsWith(".jpg") || curUrl.endsWith(".gif") || curUrl.endsWith(".png")) {
-                    if (curUrl.endsWith(".mp4")){
-//                        LOGGER.info("got a picture!=" + curUrl);
-                        LOGGER.info("got a vedio!=" + curUrl);
+                    if (curUrl.endsWith(".jpg") || curUrl.endsWith(".gif") || curUrl.endsWith(".png")) {
+//                    if (curUrl.endsWith(".mp4")){
+                        LOGGER.info("got a picture!=" + curUrl);
+//                        LOGGER.info("got a vedio!=" + curUrl);
                         String start_point = "curUrl";
                         FileOutputStream fos = null;
                         InputStream is = null;
@@ -121,7 +121,7 @@ public class No1Crawler extends WebCrawler {
     }
 
     public static void main(String[] args) throws IOException {
-        URL picurl = new URL("https://www.dorcel.com/productions/files/00/00/53/00005309-93fa1b3ce1ce2200d13950ef45dc682f3ad43f2f/_88C7435.jpg");
+        URL picurl = new URL("http://www.cnss.com.cn/uploadfile/2017/1124/20171124111741816.jpg");
         BufferedImage image = ImageIO.read(picurl);
         File file = new File("/home/tab/craw/" + UUID.randomUUID().toString() + ".jpg");
         ImageIO.write(image,"jpg",file);
